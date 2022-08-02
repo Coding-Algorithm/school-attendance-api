@@ -30,7 +30,7 @@ app.use(cors({
 
 app.use(express.json());
 
-mongoose.connect("mongodb://localhost:27017/attendance", {}, () =>
+mongoose.connect("mongodb+srv://admin:password1234@courses.oii4vvz.mongodb.net/?retryWrites=true&w=majority", {}, () =>
 	console.log("connected to mongodb")
 );
 
