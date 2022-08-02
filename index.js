@@ -7,6 +7,9 @@ const courseRoute = require("./Routes/course");
 const attendanceRouter = require("./Routes/attendance");
 
 
+const PORT = process.env.PORT || 8080
+
+
 // const multer = require('multer');
 
 
@@ -50,6 +53,6 @@ app.get("/", (req, res) => {
 	res.status(200).json({ msg: "Good" });
 });
 
-app.listen(8080, (req, res) => {
-	console.log("App listening on port 8080");
+app.listen(PORT, (req, res) => {
+	console.log(`App listening on port ${PORT}`);
 });
